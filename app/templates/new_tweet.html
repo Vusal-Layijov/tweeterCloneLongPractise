@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{%block main%}
+
+<form class="'tweet">
+    {{ form.hidden_tag() }}
+    <p>{{ form.author.label }}:{{ form.author }}</p>
+    <p>{{ form.tweet.label }}:{{ form.tweet }}</p>
+    <p>{{ form.submit }}</p>
+</form>
+
+
+{%endblock%}
